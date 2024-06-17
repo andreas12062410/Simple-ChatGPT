@@ -1,0 +1,20 @@
+{
+    "responses": [
+        {
+            "question": "Hello",
+            "response": "Hello, how can I assist you today?"
+        },
+        {
+            "question": "What is react?",
+            "response": "React is a popular JavaScript library for building user interfaces, particularly for single-page applications where you need a fast and responsive user experience. Developed by Facebook, React allows developers to create large web applications that can update and render efficiently in response to data changes. Here are some key points about React:"
+        },
+        {
+            "question": "What is the capital of France?",
+            "response": "The capital of France is Paris."
+        },
+        {
+            "question": "Who wrote 'To Kill a Mockingbird'?",
+            "response": "Harper Lee wrote 'To Kill a Mockingbird'."
+        }
+    ]
+}
