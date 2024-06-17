@@ -4,11 +4,9 @@ import path from "path";
 
 export async function POST(request: NextRequest) {
   const { messages } = await request.json();
-  console.log("Received messages:", messages);
   const mockDataPath = path.join(process.cwd(), "mockData.json");
   try {
     const mockData = JSON.parse(fs.readFileSync(mockDataPath, "utf-8"));
-    console.log('efaef', mockData)
     const messageContent = messages;
     const matchingResponse = mockData.responses.find(
       (response: { question: string }) =>
@@ -16,7 +14,6 @@ export async function POST(request: NextRequest) {
     );
 
     if (matchingResponse) {
-      console.log("Mock API response:", matchingResponse.response);
       return NextResponse.json({
         result: { message: matchingResponse.response },
       });
