@@ -1,7 +1,8 @@
-import Title from "./components/atoms/Title";
-import Result from "./components/organisms/Result";
-import { botResponses, userQuestions } from "./constant/enum";
+
+import Title from "@/components/atoms/Title";
+import { botResponses, userQuestions } from "../constant/enum";
 import { customAlphabet } from 'nanoid'
+import Result from "@/components/organisms/Result";
 
 export default function Home() {
   const nanoid = customAlphabet(
